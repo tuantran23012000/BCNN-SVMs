@@ -28,7 +28,7 @@ python gen_data.py
 
 ## Contact
 
-[tuantran23012000]([trananhtuan23012000@gmail.com](https://github.com/tuantran23012000))  
+[tuantran23012000](https://github.com/tuantran23012000)    
 *Please create an issue or contact me through trananhtuan23012000@gmail.com, thanks!*
 
 ## Author
