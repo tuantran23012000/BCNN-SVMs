@@ -23,7 +23,7 @@ class BilinearModel(nn.Module):
         outputs = torch.bmm(outputs, outputs.permute(0, 2, 1))      # bilinear product
         outputs = torch.div(outputs, 28 ** 2)                       # divide by 196 to normalize
         outputs = outputs.view(-1, 512 ** 2)                        # reshape to batchsize * 512 * 512
-        outputs = torch.sign(outputs) * torch.sqrt(outputs + 1e-12)  # signed square root normalization
+        outputs = torch.sign(outputs) * torch.sqrt(outputs + 1e-5)  # signed square root normalization
         outputs = nn.functional.normalize(outputs, p=2, dim=1)      # l2 normalization # batchsize*262144
         outputs = self.fc(outputs)                          # linear projection
         return outputs
