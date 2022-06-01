@@ -20,10 +20,10 @@ python gen_data.py
   We proposed 5 methods for the classifier training as follows,
 ```
 - python main.py --type_cls softmax
-- python main.py --type_cls cvsvm1
-- python main.py --type_cls cvsvm2
-- python main.py --type_cls cvsvm3
-- python main.py --type_cls cvsvm4
+- python main.py --type_cls cxsvm1
+- python main.py --type_cls cxsvm2
+- python main.py --type_cls cxsvm3
+- python main.py --type_cls cxsvm4
 ```
 
 ## Contact
